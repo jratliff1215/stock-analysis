@@ -6,13 +6,15 @@ Steve requested us to refactor our original code to allow for data expansion. Th
 
 The refactor of the code reduced the run time considerably for the VBA script. Both 2017 and 2018 required 0.125 seconds to complete with the refactored script, an approximate reduction of 80% from the original times for each. The reduction is due to the variance in *what* the data completes first. The original code required 12 passed through the code, as each ticker symbol requires another pass to collect the information. In the refactored code, the data compiles the bulk of the information (volume, start price, end price) for each ticker symbol prior to inserting the information into the specified cell. The reduction in passes through the data reduced the overall run time. 
 
-The below figures show to change in run time for the 2017 Stock Data, with the original run time followed by the refactored run time 
+The below figures show to change in run time for the 2017 Stock Data, with the original run time followed by the refactored run time.
+
 <img src="https://github.com/jratliff1215/stock-analysis/blob/main/Resources/2017%20Original.PNG" width="500" height="300">
 
 <img src="https://github.com/jratliff1215/stock-analysis/blob/main/Resources/VBA_Challenge_2017.PNG" width="500" height="300">
 
 
-The below figures show to change in run time for the 2018 Stock Data, with the original run time followed by the refactored run time 
+The below figures show to change in run time for the 2018 Stock Data, with the original run time followed by the refactored run time.
+
 <img src="https://github.com/jratliff1215/stock-analysis/blob/main/Resources/2018%20Original.PNG" width="500" height="300">
 
 <img src="https://github.com/jratliff1215/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG" width="500" height="300">
